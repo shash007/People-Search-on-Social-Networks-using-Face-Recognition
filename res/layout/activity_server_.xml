@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	>
+	 <RelativeLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="50dip"
+					android:background="#000000"
+					android:layout_alignParentTop="true"
+					android:id="@+id/upload_server"
+				>
+					<TextView 
+			    	    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:layout_centerVertical="true"
+						android:text="Profile Picture"
+						android:textSize="18dip"
+						android:textColor="#FFFFFF"
+		    	    />
+				</RelativeLayout>
+ 	<ImageView 
+ 	    android:id="@+id/Face" 
+ 	    android:layout_width="fill_parent"
+		android:layout_height="400dp" 
+		android:src="@drawable/ic_launcher"
+		android:layout_below="@+id/imguploadtbar"
+		android:layout_centerInParent="true" />
+ 	<TableLayout 
+ 	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true" 
+		android:orientation="horizontal"
+		android:stretchColumns="*"
+		android:background="#808080"
+		>
+			<TableRow >
+			 	<Button 
+			 	    android:layout_width="fill_parent" 
+			 	    android:id="@+id/upload_btn"
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dip"
+					android:text="Upload" />
+
+			 	<Button
+			 	    android:id="@+id/train_btn"
+			 	    android:layout_width="fill_parent"
+			 	    android:layout_height="wrap_content"
+			 	    android:layout_margin="5dip"
+			 	    android:text="Train" />
+
+			 </TableRow>
+		 </TableLayout>
+ </RelativeLayout>

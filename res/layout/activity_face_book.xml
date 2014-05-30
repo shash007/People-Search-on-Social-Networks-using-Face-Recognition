@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webviewHolder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bcg"
+    tools:context=".FaceBookActivity" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/out"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<RelativeLayout
+    android:id="@+id/rl2"
+    android:layout_width="fill_parent"
+    android:layout_height="450dp"
+    
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/text1"
+    >
+
+    <TableRow
+        android:id="@+id/tr1"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentLeft="true" >
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="75dp"
+             android:scaleType="fitXY"
+            android:gravity="center"
+              android:paddingLeft="30dp"
+             android:paddingRight="30dp"
+            android:layout_height="80dp" 
+             />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="225dp"
+            
+             android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+           android:textSize="17sp"
+             android:maxLines="2"
+            android:layout_height="80dp"
+            
+            android:text="TextView" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tr2"
+         android:paddingTop="20dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tr1" >
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:scaleType="fitXY"
+           android:layout_width="75dp"
+              android:paddingLeft="30dp"
+             android:paddingRight="30dp"
+            android:layout_height="80dp" 
+            />
+
+        <TextView
+            android:id="@+id/text3"
+             android:layout_width="225dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+           android:textSize="14sp"
+             android:maxLines="2"
+            android:layout_height="80dp"
+             android:textStyle="bold"
+            android:text="TextView" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tr3"
+         android:paddingTop="20dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/tr2" >
+
+        <ImageButton
+            android:id="@+id/button3"
+           	 android:scaleType="fitXY"
+              android:layout_width="75dp"
+              android:paddingLeft="30dp"
+             android:paddingRight="30dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="225dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+           android:textSize="11sp"
+             android:maxLines="2"
+            android:layout_height="80dp"
+            
+            android:text="TextView" />
+    </TableRow>
+</RelativeLayout>
+
+</RelativeLayout>

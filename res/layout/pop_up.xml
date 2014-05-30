@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageButton
+                android:id="@+id/imageBt2"
+                android:layout_weight="1"
+                android:layout_width="95dp"
+                android:layout_height="fill_parent"
+                
+                android:src="@drawable/google_plus" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="95dp"
+                android:layout_height="fill_parent"
+               
+                android:layout_weight="1"
+                android:src="@drawable/images" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                 android:layout_weight="1"
+                android:layout_width="98dp"
+                android:layout_height="fill_parent"
+               
+                android:src="@drawable/twitter" />
+
+            <ImageButton
+                android:id="@+id/linkedin"
+                 android:layout_weight="1"
+                android:layout_width="98dp"
+                android:layout_height="fill_parent"
+               
+                android:src="@drawable/linkedin" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cancel" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

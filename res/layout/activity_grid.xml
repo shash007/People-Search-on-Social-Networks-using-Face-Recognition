@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<GridView
+    android:id="@+id/gridView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:stretchMode="columnWidth"
+    android:background="#000000" >
+</GridView>
+
+</RelativeLayout>

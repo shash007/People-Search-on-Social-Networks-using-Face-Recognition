@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:id="@+id/rlMain"
+    android:background="@drawable/bcg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgVideoOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rdUploadVideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cutom_radio"
+            android:text="@string/uploadVideo"
+            android:textColor="#00BFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdCapture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cutom_radio"
+            android:text="@string/captureVideo"
+            android:textColor="#00BFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdClickImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:button="@drawable/cutom_radio"
+            android:text="@string/clickImage"
+            android:textColor="#00BFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdUploadImage"
+             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cutom_radio"
+            android:text="@string/uploadImage"
+            android:textColor="#00BFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

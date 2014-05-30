@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.face_recog"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.face_recog.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Textbox"
+            android:label="@string/title_activity_textbox" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.FaceBookActivity"
+            android:label="@string/title_activity_face_book" >
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:host="callback"
+                android:scheme="x-oauthflow-linkedin" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.NamesActivity"
+            android:label="@string/title_activity_names" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.WebActivity"
+            android:label="@string/title_activity_web" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.GridActivity"
+            android:label="@string/title_activity_grid" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.TabActivity"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Server_Activity"
+            android:label="@string/title_activity_server_" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.CallBackActivity"
+            android:label="@string/title_activity_call_back" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="facebook"
+                    android:scheme="temboo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.face_recog.LinkedinDialog"
+            android:label="@string/title_activity_linkedin_dialog" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Video_Activity"
+            android:label="@string/title_activity_video_"
+            android:largeHeap="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.face_recog.FaceDetect"
+            android:label="@string/title_activity_face_detect" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Detection"
+            android:label="@string/title_activity_detection" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Capture"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Upload"
+            android:label="@string/title_activity_upload" >
+        </activity>
+        <activity
+            android:name="com.example.face_recog.Capture1"
+            android:label="@string/title_activity_capture1" >
+        </activity>
+    </application>
+
+</manifest>

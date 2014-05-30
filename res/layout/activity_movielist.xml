@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    
+
+   
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            
+            android:maxLines="3"
+           android:textSize="15sp"
+           android:textStyle="bold"
+            />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        
+        android:layout_below="@+id/tableRow1"
+        android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/address"
+                     
+            android:paddingBottom="5dp"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="NOT AVAILABLE"
+            android:textAlignment="center" />
+          
+    
+
+        <TextView
+            android:id="@+id/education"
+            android:paddingBottom="5dp"
+           
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:gravity="center"
+            android:text="NOT AVAILABLE"
+            android:textAlignment="center"
+             />
+
+        <TextView
+            android:id="@+id/company"
+            android:paddingBottom="5dp"
+             
+            android:layout_below="@+id/education"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+           
+            android:text="NOT AVAILABLE"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/associations"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/company"
+             
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:text="NOT AVAILABLE"
+            android:textAlignment="center"
+             />
+
+       
+        <TextView
+            android:id="@+id/headline"
+            android:paddingBottom="5dp"
+             android:layout_below="@+id/associations"
+              
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:textAlignment="center"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>
